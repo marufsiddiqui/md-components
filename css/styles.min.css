@@ -609,10 +609,7 @@ main {
 .Chip:focus {
   color: #fff; }
 
-.Chip-delete {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.Chip-delete-button {
   background: rgba(0, 0, 0, 0.54);
   font-size: 20px;
   color: #e0e0e0;
@@ -622,6 +619,11 @@ main {
   height: 20px;
   width: 20px;
   margin: 0 4px; }
+
+.Chip-delete-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .Chip-icon {
   display: flex;
