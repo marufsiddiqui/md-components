@@ -597,6 +597,14 @@ main {
   background-color: rgba(0, 0, 0, 0.12);
   display: block; }
 
+.Chip-wrapper {
+  cursor: text; }
+
+.Chip-input {
+  outline: none;
+  background: none;
+  border: none; }
+
 .Chip {
   display: inline-flex;
   align-items: center;
@@ -604,10 +612,17 @@ main {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.87);
   border-radius: 16px;
-  height: 32px; }
+  height: 32px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
 
 .Chip:focus {
-  color: #fff; }
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.54); }
+
+.Chip:focus .Chip-delete {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.54); }
 
 .Chip-delete {
   display: flex;
@@ -1421,3 +1436,9 @@ nav.is-visible {
 
 section {
   margin-bottom: 50px; }
+
+.Chip-example1 {
+  border-bottom: 2px solid #ddd; }
+
+.Chip-example1.is-focused {
+  border-color: #1b325f; }
