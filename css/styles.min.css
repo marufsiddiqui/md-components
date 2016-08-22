@@ -737,7 +737,7 @@ header.Header--shadow {
  * https://material.google.com/components/lists.html#lists-specs
  */
 .List {
-  padding: 8px 16px;
+  padding: 0 16px;
   list-style: none;
   background-color: white;
   /** This article suggest to increase padding for table and above 
@@ -745,7 +745,7 @@ header.Header--shadow {
    */ }
   @media (min-width: 768px) {
     .List {
-      padding: 8px 24px; } }
+      padding: 0 24px; } }
 
 .List-row-text-primary {
   font-size: 16px;
@@ -777,6 +777,10 @@ header.Header--shadow {
   min-height: 48px;
   display: flex;
   align-items: center; }
+  .List-row:first-child {
+    padding-top: 8px; }
+  .List-row:last-child {
+    padding-bottom: 8px; }
 
 .List-row-icon-left, .List-row-icon-right, .List-row-avatar {
   width: 56px; }
