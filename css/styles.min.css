@@ -618,7 +618,8 @@ main {
 
 .Chip:focus {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.54); }
+  background-color: rgba(0, 0, 0, 0.54);
+  outline: none; }
 
 .Chip:focus .Chip-delete {
   background-color: #fff;
