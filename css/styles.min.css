@@ -747,6 +747,10 @@ header.Header--shadow {
     .List {
       padding: 0 24px; } }
 
+.List-row-text {
+  flex-shrink: 1;
+  min-width: 150px; }
+
 .List-row-text-primary {
   font-size: 16px;
   margin: 0 0;
@@ -762,7 +766,12 @@ header.Header--shadow {
   line-height: 19px;
   font-weight: normal;
   padding: 0 0;
-  margin: 0 0; }
+  margin: 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden; }
 
 .List-row-text-secondary {
   color: #808080; }
@@ -783,6 +792,7 @@ header.Header--shadow {
     padding-bottom: 8px; }
 
 .List-row-icon-left, .List-row-icon-right, .List-row-avatar {
+  flex-shrink: 0;
   width: 56px; }
 
 /* Three line rows have top aligned icons */
