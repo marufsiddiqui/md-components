@@ -598,7 +598,8 @@ main {
   display: block; }
 
 .Chip-wrapper {
-  cursor: text; }
+  cursor: text;
+  display: flex; }
 
 .Chip-input {
   outline: none;
@@ -635,15 +636,8 @@ main {
   fill: #fff; }
 
 .Chip-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
   width: 32px;
-  height: 32px;
-  background-color: #009587;
-  border-radius: 50%;
-  font-size: 16px; }
+  height: 32px; }
 
 /**
  * http://www.google.com/design/spec/layout/metrics-keylines.html#metrics-keylines-keylines-spacing
