@@ -599,7 +599,8 @@ main {
 
 .Chip-wrapper {
   cursor: text;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .Chip-input {
   outline: none;
