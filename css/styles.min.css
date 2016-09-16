@@ -1597,9 +1597,6 @@ main h2 {
 .playgroundToggleCodeLink::before {
   content: '<live edit>'; }
 
-.playgroundToggleCodeLink:hover {
-  background: rgba(153, 153, 153, 0.2); }
-
 .playgroundPreview {
   background: white;
   padding: 10px; }
