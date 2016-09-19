@@ -616,9 +616,10 @@ main {
   border-radius: 16px;
   height: 32px;
   margin-right: 5px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  cursor: default; }
 
-.Chip:focus {
+.Chip:focus, .Chip:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.54);
   outline: none; }
@@ -631,9 +632,9 @@ main {
   margin: 0 4px; }
 
 .Chip svg {
-  fill: rgba(0, 0, 0, 0.54); }
+  fill: rgba(0, 0, 0, 0.26); }
 
-.Chip:focus svg {
+.Chip:focus svg, .Chip:hover svg {
   fill: #fff; }
 
 .Chip-icon {
