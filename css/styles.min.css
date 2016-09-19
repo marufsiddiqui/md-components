@@ -728,7 +728,7 @@ header.Header--shadow {
  * https://material.google.com/components/lists.html#lists-specs
  */
 .List {
-  padding: 0 0;
+  padding: 8px 0;
   margin: 0 0;
   list-style: none;
   background-color: white; }
@@ -747,12 +747,17 @@ header.Header--shadow {
 .List-row--oneline .List-row-text-primary {
   margin-bottom: 0px; }
 
-.List-row.List-row--selectable:focus {
+.List-row--islink:focus, .List-row--selectable:hover, .List-row--islink:hover {
   background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
   outline: none; }
 
-.List-row--selectable:hover {
-  background-color: #fdfdfd; }
+.List-row--islink, .List-row--selectable {
+  cursor: pointer; }
+
+.List-row:not(.List-row--islink):focus, .List-row--islink.active {
+  background-color: #adadad5e;
+  outline: none; }
 
 .List-row-text-secondary, .List-row-text-subheader {
   font-size: 14px;
@@ -776,6 +781,7 @@ header.Header--shadow {
   height: 88px; }
 
 .List-row {
+  transition: background-color 0.3s ease;
   min-height: 48px;
   display: flex;
   align-items: center;
@@ -783,15 +789,14 @@ header.Header--shadow {
   padding-right: 16px;
   /** This article suggest to increase padding for table and above
    * https://material.google.com/layout/metrics-keylines.html#metrics-keylines-keylines-spacing
-   */ }
+   */
+  text-decoration: none;
+  width: 100%;
+  color: inherit; }
   @media (min-width: 768px) {
     .List-row {
       padding-left: 24px;
       padding-right: 24px; } }
-  .List-row:first-child {
-    padding-top: 8px; }
-  .List-row:last-child {
-    padding-bottom: 8px; }
 
 .List-row-icon-left, .List-row-icon-right, .List-row-avatar {
   flex-shrink: 0;
@@ -801,7 +806,7 @@ header.Header--shadow {
 .List-row.List-row--threeline {
   align-items: flex-start; }
   .List-row.List-row--threeline > * {
-    margin-top: 20px; }
+    margin-top: 12px; }
   .List-row.List-row--threeline .List-row-avatar {
     align-items: flex-start; }
 
@@ -1601,6 +1606,9 @@ main h2 {
 .playgroundPreview {
   background: white;
   padding: 10px; }
+
+.ListExamples .playgroundPreview {
+  padding: 0; }
 
 .playgroundError {
   padding: 10px;
