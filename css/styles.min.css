@@ -1462,7 +1462,11 @@ nav.is-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 16px; }
+  margin-right: 16px;
+  margin-top: 22px; }
+
+.Textfield--nolabel .Textfield-icon {
+  margin-top: 0px; }
 
 .Textfield-label {
   order: 1;
@@ -1497,6 +1501,9 @@ nav.is-visible {
 .Textfield-input:focus {
   border-bottom-color: #1b325f;
   box-shadow: 0 1px 0 0 #1b325f; }
+
+.Textfield:not(.Textfield--nolabel) .Textfield-input:not(:focus)::-webkit-input-placeholder {
+  color: transparent; }
 
 .Textfield-input--error {
   border-bottom-color: #f44336; }
