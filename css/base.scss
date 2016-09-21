@@ -42,9 +42,6 @@
   font-style: normal;
   font-weight: 700;
 }
-$color-accent: '255,64,129';
-$text-link-color: unquote('rgb(#{$color-accent})') !default;
-
 $typo-display-4-font-size-base: 11.2rem;
 $typo-display-3-font-size-base: 5.6rem;
 $typo-display-2-font-size-base: 4.5rem;
@@ -216,7 +213,6 @@ html {
 body {
   font-family: $typo-font-Family;
   font-size: 10px;
-  line-height: 1em;
   background: #f9f9f9;
   color: #333;
   -webkit-font-smoothing: antialiased;
@@ -306,11 +302,6 @@ h6 {
 
   margin-top: 24px;
   margin-bottom: 16px;
-}
-
-a {
-  color: $text-link-color;
-  font-weight: 500;
 }
 
 blockquote {

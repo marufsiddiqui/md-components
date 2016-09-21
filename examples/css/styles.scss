@@ -48,7 +48,7 @@ section {
   padding: 0;
 }
 
-.playground>div {
+.playground>div>ul {
   padding-left: 10px;
 }
 
@@ -124,4 +124,9 @@ section {
   font-size: 12px;
   color: white;
   background: #F2777A;
+}
+
+.examplesLink {
+  color: rgb(255,64,129);
+  font-weight: 500;
 }
