@@ -1626,7 +1626,6 @@ main h2 {
 
 .playgroundToggleCodeLink, .playgroundToggleCodeLink::before {
   cursor: pointer;
-  font-family: monospace;
   position: relative;
   right: 0;
   display: inline-block; }
