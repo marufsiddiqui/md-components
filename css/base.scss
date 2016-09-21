@@ -158,18 +158,6 @@ $navigation-width: 240px;
   }
 }
 
-@mixin typo-subhead-2($colorContrast: false) {
-  font-family: $typo-font-Family;
-  font-size: $typo-subhead-font-size-base;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.04em;
-
-  @if $colorContrast {
-    opacity: 0.87;
-  }
-}
-
 @mixin typo-blockquote($colorContrast: false) {
   font-family: $typo-font-Family;
   position: relative;
