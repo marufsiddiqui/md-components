@@ -77,11 +77,18 @@ $tabs-transition-function: cubic-bezier(0.35, 0, 0.25, 1);
 
 $navigation-width: 240px;
 
+/*
+font-size-> https://material.google.com/style/typography.html#typography-typeface
+line-height -> https://material.google.com/style/typography.html#typography-styles
+letter-spacing -> https://material.google.com/style/typography.html#typography-line-height
+opacity -> https://material.google.com/style/typography.html#typography-line-height
+*/
+
 @mixin typo-display-3 {
   font-family: $typo-font-Family;
   font-size: $typo-display-3-font-size-base;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.35;
   letter-spacing: -0.005em;
   opacity: 0.54;
 }
@@ -151,11 +158,14 @@ html {
   // font-size: $font-size-root;
   // Changes the default tap highlight to be completely transparent in iOS.
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // http://phonegap-tips.com/articles/essential-phonegap-css-webkit-touch-callout.html
   -webkit-touch-callout: none;
 
   // Fonts on OSX will look more consistent with other systems that do not
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=857142
+  -webkit-font-smoothing: antialiased; // http://maxvoltar.com/archive/-webkit-font-smoothing/
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+  -moz-osx-font-smoothing: grayscale;  // http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
   font-size: $base-font-size;
 }
 
