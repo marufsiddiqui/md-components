@@ -22,6 +22,7 @@ import SwitchRoute from './components/switchRoute'
 import TabsRoute from './components/tabsRoute'
 import TextfieldRoute from './components/textfieldRoute'
 import TooltipRoute from './components/tooltipRoute'
+import TypographyRoute from './components/typography'
 
 // required for tabs component demo
 class Germany extends React.Component {
@@ -80,6 +81,7 @@ ReactDOM.render((
       </Route>
       <Route path='textfield' component={TextfieldRoute} />
       <Route path='tooltip' component={TooltipRoute} />
+      <Route path='typography' component={TypographyRoute} />
     </Route>
   </Router>
 ), document.getElementById('react'))

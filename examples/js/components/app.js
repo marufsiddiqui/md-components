@@ -37,7 +37,8 @@ export default class App extends React.Component {
       {text: 'Switch', link: '/switch'},
       {text: 'Tabs', link: '/tabs'},
       {text: 'Textfield', link: '/textfield'},
-      {text: 'Tooltip', link: '/tooltip'}
+      {text: 'Tooltip', link: '/tooltip'},
+      {text: 'Typography', link: '/typography'}
     ]
 
     return (
