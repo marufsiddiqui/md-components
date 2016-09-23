@@ -63,12 +63,17 @@
   position: absolute;
   /* 48px - 18px = 30px / 2 = 15px */
   top: 15px;
-  left: 8px;
+  left: 12.5px;
+
   /* use the same width as svg path element for checkbox icon */
   width: 18px;
   height: 18px;
   border-radius: 50%;
   display: none;
+
+  @include medium {
+    left: 8px;
+  }
 }
 
 .Checkbox-input:checked:focus ~ .Checkbox-focus {
